@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TicTactoe</string>
+    <string name="press_to_play_1v1">Press to play 1v1.</string>
+</resources>
