@@ -12,27 +12,27 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.airbnb.lottie.LottieAnimationView;
 import java.util.Random;
 
-public class activity1vComp_intermediate extends AppCompatActivity{
-    int XC=00,OC=00;
+public class activity1vComp_hard extends AppCompatActivity{
+    private static int XC=00,OC=00;
     Button cell1,cell2,cell3,cell4,cell5,cell6,cell7,cell8,cell9;
     LottieAnimationView anim;
     TextView XCount,OCount,score,sX,sO;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity1vcomp_intermediate);
+        setContentView(R.layout.activity1vcomp_hard);
 
         iniBut();
 
-        Animation inVi = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.alpha);
-        Animation move_d1 = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.move_d1);
-        Animation move_d2 = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.move_d2);
-        Animation move_down_x = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.move_down_x);
-        Animation move_down_y = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.move_down_y);
-        Animation move_up_x = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.move_up_x);
-        Animation move_up_y = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.move_up_y);
-        Animation move_d3 = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.move_d3);
-        Animation move_d4= AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.move_d4);
+        Animation inVi = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.alpha);
+        Animation move_d1 = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.move_d1);
+        Animation move_d2 = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.move_d2);
+        Animation move_down_x = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.move_down_x);
+        Animation move_down_y = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.move_down_y);
+        Animation move_up_x = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.move_up_x);
+        Animation move_up_y = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.move_up_y);
+        Animation move_d3 = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.move_d3);
+        Animation move_d4= AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.move_d4);
 
         cell1.setAnimation(move_d1);
         cell2.setAnimation(move_up_x);
@@ -43,7 +43,6 @@ public class activity1vComp_intermediate extends AppCompatActivity{
         cell7.setAnimation(move_d4);
         cell8.setAnimation(move_up_y);
         cell9.setAnimation(move_d2);
-        score.setAnimation(inVi);
         sO.setAnimation(inVi);
         sX.setAnimation(inVi);
         XCount.setAnimation(inVi);
@@ -80,7 +79,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
             anim = findViewById(R.id.laView4);
             anim.playAnimation();
 
-            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
             cell1.setAnimation(Anim);
             cell2.setAnimation(Anim);
             cell3.setAnimation(Anim);
@@ -96,7 +95,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
             anim = findViewById(R.id.laView4);
             anim.playAnimation();
 
-            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
             cell4.setAnimation(Anim);
             cell5.setAnimation(Anim);
             cell6.setAnimation(Anim);
@@ -112,7 +111,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
             anim = findViewById(R.id.laView4);
             anim.playAnimation();
 
-            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
             cell1.setAnimation(Anim);
             cell4.setAnimation(Anim);
             cell7.setAnimation(Anim);
@@ -128,7 +127,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
             anim = findViewById(R.id.laView4);
             anim.playAnimation();
 
-            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
             cell7.setAnimation(Anim);
             cell8.setAnimation(Anim);
             cell9.setAnimation(Anim);
@@ -144,7 +143,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
             anim = findViewById(R.id.laView4);
             anim.playAnimation();
 
-            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
             cell5.setAnimation(Anim);
             cell2.setAnimation(Anim);
             cell8.setAnimation(Anim);
@@ -160,7 +159,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
             anim = findViewById(R.id.laView4);
             anim.playAnimation();
 
-            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
             cell3.setAnimation(Anim);
             cell6.setAnimation(Anim);
             cell9.setAnimation(Anim);
@@ -176,7 +175,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
             anim = findViewById(R.id.laView4);
             anim.playAnimation();
 
-            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
             cell1.setAnimation(Anim);
             cell5.setAnimation(Anim);
             cell9.setAnimation(Anim);
@@ -192,7 +191,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
             anim = findViewById(R.id.laView4);
             anim.playAnimation();
 
-            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
             cell3.setAnimation(Anim);
             cell5.setAnimation(Anim);
             cell7.setAnimation(Anim);
@@ -211,7 +210,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                                         if(((cell9.getText().toString().equals("X"))||(cell9.getText().toString().equals("O")))){
                                             Toast.makeText(getApplicationContext(),"Game Draw!!!", Toast.LENGTH_LONG).show();
 
-                                            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                                            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                                             cell1.setAnimation(Anim);
                                             cell2.setAnimation(Anim);
                                             cell3.setAnimation(Anim);
@@ -246,7 +245,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell2.setAnimation(Anim);
                         cell3.setAnimation(Anim);
@@ -262,7 +261,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell4.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell6.setAnimation(Anim);
@@ -278,7 +277,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell7.setAnimation(Anim);
                         cell8.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -294,7 +293,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell4.setAnimation(Anim);
                         cell7.setAnimation(Anim);
@@ -310,7 +309,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell2.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell8.setAnimation(Anim);
@@ -326,7 +325,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell3.setAnimation(Anim);
                         cell6.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -342,7 +341,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -358,7 +357,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell3.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell7.setAnimation(Anim);
@@ -380,7 +379,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell2.setAnimation(Anim);
                         cell3.setAnimation(Anim);
@@ -396,7 +395,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell4.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell6.setAnimation(Anim);
@@ -412,7 +411,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell7.setAnimation(Anim);
                         cell8.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -428,7 +427,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell4.setAnimation(Anim);
                         cell7.setAnimation(Anim);
@@ -444,7 +443,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell2.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell8.setAnimation(Anim);
@@ -460,7 +459,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell3.setAnimation(Anim);
                         cell6.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -476,7 +475,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -492,7 +491,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell3.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell7.setAnimation(Anim);
@@ -514,7 +513,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell2.setAnimation(Anim);
                         cell3.setAnimation(Anim);
@@ -530,7 +529,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell4.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell6.setAnimation(Anim);
@@ -546,7 +545,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell7.setAnimation(Anim);
                         cell8.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -562,7 +561,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell4.setAnimation(Anim);
                         cell7.setAnimation(Anim);
@@ -578,7 +577,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell2.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell8.setAnimation(Anim);
@@ -594,7 +593,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell3.setAnimation(Anim);
                         cell6.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -610,7 +609,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -626,7 +625,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell3.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell7.setAnimation(Anim);
@@ -648,7 +647,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell2.setAnimation(Anim);
                         cell3.setAnimation(Anim);
@@ -664,7 +663,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell4.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell6.setAnimation(Anim);
@@ -680,7 +679,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell7.setAnimation(Anim);
                         cell8.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -696,7 +695,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell4.setAnimation(Anim);
                         cell7.setAnimation(Anim);
@@ -712,7 +711,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell2.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell8.setAnimation(Anim);
@@ -728,7 +727,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell3.setAnimation(Anim);
                         cell6.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -744,7 +743,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -760,7 +759,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell3.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell7.setAnimation(Anim);
@@ -782,7 +781,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell2.setAnimation(Anim);
                         cell3.setAnimation(Anim);
@@ -798,7 +797,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell4.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell6.setAnimation(Anim);
@@ -814,7 +813,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell7.setAnimation(Anim);
                         cell8.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -830,7 +829,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell4.setAnimation(Anim);
                         cell7.setAnimation(Anim);
@@ -846,7 +845,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell2.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell8.setAnimation(Anim);
@@ -862,7 +861,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell3.setAnimation(Anim);
                         cell6.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -878,7 +877,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -894,7 +893,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell3.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell7.setAnimation(Anim);
@@ -916,7 +915,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell2.setAnimation(Anim);
                         cell3.setAnimation(Anim);
@@ -932,7 +931,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell4.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell6.setAnimation(Anim);
@@ -948,7 +947,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell7.setAnimation(Anim);
                         cell8.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -964,7 +963,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell4.setAnimation(Anim);
                         cell7.setAnimation(Anim);
@@ -980,7 +979,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell2.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell8.setAnimation(Anim);
@@ -996,7 +995,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell3.setAnimation(Anim);
                         cell6.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -1012,7 +1011,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -1028,7 +1027,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell3.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell7.setAnimation(Anim);
@@ -1050,7 +1049,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell2.setAnimation(Anim);
                         cell3.setAnimation(Anim);
@@ -1066,7 +1065,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell4.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell6.setAnimation(Anim);
@@ -1082,7 +1081,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell7.setAnimation(Anim);
                         cell8.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -1098,7 +1097,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell4.setAnimation(Anim);
                         cell7.setAnimation(Anim);
@@ -1114,7 +1113,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell2.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell8.setAnimation(Anim);
@@ -1130,7 +1129,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell3.setAnimation(Anim);
                         cell6.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -1146,7 +1145,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -1162,7 +1161,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell3.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell7.setAnimation(Anim);
@@ -1184,7 +1183,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell2.setAnimation(Anim);
                         cell3.setAnimation(Anim);
@@ -1200,7 +1199,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell4.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell6.setAnimation(Anim);
@@ -1216,7 +1215,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell7.setAnimation(Anim);
                         cell8.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -1232,7 +1231,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell4.setAnimation(Anim);
                         cell7.setAnimation(Anim);
@@ -1248,7 +1247,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell2.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell8.setAnimation(Anim);
@@ -1264,7 +1263,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell3.setAnimation(Anim);
                         cell6.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -1280,7 +1279,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -1296,7 +1295,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell3.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell7.setAnimation(Anim);
@@ -1318,7 +1317,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell2.setAnimation(Anim);
                         cell3.setAnimation(Anim);
@@ -1334,7 +1333,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell4.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell6.setAnimation(Anim);
@@ -1350,7 +1349,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell7.setAnimation(Anim);
                         cell8.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -1366,7 +1365,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell4.setAnimation(Anim);
                         cell7.setAnimation(Anim);
@@ -1382,7 +1381,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell2.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell8.setAnimation(Anim);
@@ -1398,7 +1397,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell3.setAnimation(Anim);
                         cell6.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -1414,7 +1413,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell1.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell9.setAnimation(Anim);
@@ -1430,7 +1429,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                         anim = findViewById(R.id.laView4);
                         anim.playAnimation();
 
-                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                        Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                         cell3.setAnimation(Anim);
                         cell5.setAnimation(Anim);
                         cell7.setAnimation(Anim);
@@ -1872,7 +1871,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
             anim = findViewById(R.id.laView4);
             anim.playAnimation();
 
-            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
             cell1.setAnimation(Anim);
             cell2.setAnimation(Anim);
             cell3.setAnimation(Anim);
@@ -1888,7 +1887,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
             anim = findViewById(R.id.laView4);
             anim.playAnimation();
 
-            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
             cell4.setAnimation(Anim);
             cell5.setAnimation(Anim);
             cell6.setAnimation(Anim);
@@ -1904,7 +1903,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
             anim = findViewById(R.id.laView4);
             anim.playAnimation();
 
-            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
             cell7.setAnimation(Anim);
             cell8.setAnimation(Anim);
             cell9.setAnimation(Anim);
@@ -1920,7 +1919,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
             anim = findViewById(R.id.laView4);
             anim.playAnimation();
 
-            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
             cell1.setAnimation(Anim);
             cell4.setAnimation(Anim);
             cell7.setAnimation(Anim);
@@ -1936,7 +1935,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
             anim = findViewById(R.id.laView4);
             anim.playAnimation();
 
-            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
             cell2.setAnimation(Anim);
             cell5.setAnimation(Anim);
             cell8.setAnimation(Anim);
@@ -1952,7 +1951,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
             anim = findViewById(R.id.laView4);
             anim.playAnimation();
 
-            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
             cell3.setAnimation(Anim);
             cell6.setAnimation(Anim);
             cell9.setAnimation(Anim);
@@ -1968,7 +1967,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
             anim = findViewById(R.id.laView4);
             anim.playAnimation();
 
-            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
             cell1.setAnimation(Anim);
             cell5.setAnimation(Anim);
             cell9.setAnimation(Anim);
@@ -1984,7 +1983,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
             anim = findViewById(R.id.laView4);
             anim.playAnimation();
 
-            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+            Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
             cell3.setAnimation(Anim);
             cell5.setAnimation(Anim);
             cell7.setAnimation(Anim);
@@ -2062,7 +2061,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                 anim = findViewById(R.id.laView4);
                 anim.playAnimation();
 
-                Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                 cell1.setAnimation(Anim);
                 cell2.setAnimation(Anim);
                 cell3.setAnimation(Anim);
@@ -2078,7 +2077,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                 anim = findViewById(R.id.laView4);
                 anim.playAnimation();
 
-                Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                 cell4.setAnimation(Anim);
                 cell5.setAnimation(Anim);
                 cell6.setAnimation(Anim);
@@ -2094,7 +2093,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                 anim = findViewById(R.id.laView4);
                 anim.playAnimation();
 
-                Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                 cell7.setAnimation(Anim);
                 cell8.setAnimation(Anim);
                 cell9.setAnimation(Anim);
@@ -2110,7 +2109,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                 anim = findViewById(R.id.laView4);
                 anim.playAnimation();
 
-                Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                 cell1.setAnimation(Anim);
                 cell4.setAnimation(Anim);
                 cell7.setAnimation(Anim);
@@ -2126,7 +2125,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                 anim = findViewById(R.id.laView4);
                 anim.playAnimation();
 
-                Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                 cell2.setAnimation(Anim);
                 cell5.setAnimation(Anim);
                 cell8.setAnimation(Anim);
@@ -2142,7 +2141,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                 anim = findViewById(R.id.laView4);
                 anim.playAnimation();
 
-                Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                 cell3.setAnimation(Anim);
                 cell6.setAnimation(Anim);
                 cell9.setAnimation(Anim);
@@ -2158,7 +2157,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                 anim = findViewById(R.id.laView4);
                 anim.playAnimation();
 
-                Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                 cell1.setAnimation(Anim);
                 cell5.setAnimation(Anim);
                 cell9.setAnimation(Anim);
@@ -2174,7 +2173,7 @@ public class activity1vComp_intermediate extends AppCompatActivity{
                 anim = findViewById(R.id.laView4);
                 anim.playAnimation();
 
-                Animation Anim = AnimationUtils.loadAnimation(activity1vComp_intermediate.this,R.anim.rotate);
+                Animation Anim = AnimationUtils.loadAnimation(activity1vComp_hard.this,R.anim.rotate);
                 cell3.setAnimation(Anim);
                 cell5.setAnimation(Anim);
                 cell7.setAnimation(Anim);

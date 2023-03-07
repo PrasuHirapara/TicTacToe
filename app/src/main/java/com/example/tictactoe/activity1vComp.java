@@ -15,7 +15,7 @@ import com.airbnb.lottie.LottieAnimationView;
 import java.util.Random;
 
 public class activity1vComp extends AppCompatActivity{
-    int XC=00,OC=00;
+    private static int XC= 0,OC=0;
     Button cell1,cell2,cell3,cell4,cell5,cell6,cell7,cell8,cell9;
     LottieAnimationView anim;
     TextView XCount,OCount,score,sX,sO;
@@ -47,7 +47,6 @@ public class activity1vComp extends AppCompatActivity{
         cell7.setAnimation(move_d4);
         cell8.setAnimation(move_up_y);
         cell9.setAnimation(move_d2);
-        score.setAnimation(inVi);
         sO.setAnimation(inVi);
         sX.setAnimation(inVi);
         XCount.setAnimation(inVi);

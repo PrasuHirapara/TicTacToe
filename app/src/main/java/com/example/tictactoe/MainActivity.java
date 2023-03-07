@@ -3,12 +3,12 @@ package com.example.tictactoe;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.example.tictactoe.R.id;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,20 +24,25 @@ public class MainActivity extends AppCompatActivity {
 
        Animation alpha = AnimationUtils.loadAnimation(MainActivity.this,R.anim.alpha);
 
-        Button button1 =  findViewById(R.id.button1v1);
+        Button button1 = findViewById(R.id.button1v1);
         Button button2 = findViewById(R.id.button1vComp);
-        Button button3 = findViewById(R.id.button1vComp_intermediate);
+        Button button3 = findViewById(R.id.button1vComp_hard);
+        Button button4 = findViewById(R.id.button_online);
 
         button1.setAnimation(alpha);
         button2.setAnimation(alpha);
         button3.setAnimation(alpha);
+        button4.setAnimation(alpha);
 
         button1.setOnClickListener(view -> openactivity1v1());
 
         button2.setOnClickListener(view -> openactivity1vComp());
 
-        button3.setOnClickListener(view -> openactivity1vComp_intermediate());
+        button3.setOnClickListener(view -> openactivity1vComp_hard());
+
+        button4.setOnClickListener(view -> openactivityOnline());
     }
+
     public void openactivity1v1(){
         Intent intent = new Intent(this,activity1v1.class);
         startActivity(intent);
@@ -48,8 +53,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
      }
 
-    public void openactivity1vComp_intermediate() {
-        Intent intent = new Intent(this,activity1vComp_intermediate.class);
+    public void openactivity1vComp_hard() {
+        Intent intent = new Intent(this, activity1vComp_hard.class);
+        startActivity(intent);
+    }
+
+    private void openactivityOnline() {
+        Intent intent = new Intent(this, activity_online.class);
         startActivity(intent);
     }
 }

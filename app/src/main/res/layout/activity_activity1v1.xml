@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:fillViewport="true">
 
     <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/black"
@@ -15,7 +12,7 @@
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/laView5"
             android:layout_width="match_parent"
-            android:layout_height="703dp"
+            android:layout_height="match_parent"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
@@ -35,8 +32,8 @@
 
         <TextView
             android:id="@+id/score"
-            android:layout_width="368dp"
-            android:layout_height="140dp"
+            android:layout_width="@dimen/_368sdp"
+            android:layout_height="@dimen/_140sdp"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
@@ -58,8 +55,8 @@
 
         <TextView
             android:id="@+id/sX"
-            android:layout_width="85dp"
-            android:layout_height="71dp"
+            android:layout_width="@dimen/_85sdp"
+            android:layout_height="@dimen/_71sdp"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
@@ -81,8 +78,8 @@
 
         <TextView
             android:id="@+id/sO"
-            android:layout_width="85dp"
-            android:layout_height="71dp"
+            android:layout_width="@dimen/_85sdp"
+            android:layout_height="@dimen/_71sdp"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
@@ -105,7 +102,7 @@
         <TextView
             android:id="@+id/xCount"
             android:layout_width="wrap_content"
-            android:layout_height="61dp"
+            android:layout_height="@dimen/_61sdp"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
@@ -128,7 +125,7 @@
         <TextView
             android:id="@+id/oCount"
             android:layout_width="wrap_content"
-            android:layout_height="67dp"
+            android:layout_height="@dimen/_67sdp"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
@@ -150,8 +147,8 @@
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="291dp"
-            android:layout_height="44dp"
+            android:layout_width="@dimen/_291sdp"
+            android:layout_height="@dimen/_44sdp"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
@@ -172,14 +169,14 @@
 
         <GridLayout
             android:layout_width="wrap_content"
-            android:layout_height="345dp"
+            android:layout_height="@dimen/_345sdp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="false"
-            android:layout_marginTop="298dp"
-            android:layout_marginEnd="47dp"
-            android:layout_marginRight="47dp"
+            android:layout_marginTop="299dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginRight="37dp"
             android:layout_marginBottom="55dp"
             android:columnCount="3"
             android:gravity="center_horizontal"
@@ -187,7 +184,7 @@
 
             <Button
                 android:id="@+id/cell1"
-                android:layout_height="90dp"
+                android:layout_height="@dimen/_90sdp"
                 android:layout_row="0"
                 android:layout_column="0"
                 android:backgroundTint="@color/purple_200"
@@ -196,62 +193,62 @@
 
             <Button
                 android:id="@+id/cell2"
-                android:layout_height="90dp"
-                android:layout_marginLeft="11dp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_marginLeft="@dimen/_11sdp"
                 android:backgroundTint="@color/purple_200"
                 android:onClick="setChar"
                 android:textSize="35sp" />
 
             <Button
                 android:id="@+id/cell3"
-                android:layout_height="90dp"
-                android:layout_marginLeft="11dp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_marginLeft="@dimen/_11sdp"
                 android:backgroundTint="@color/purple_200"
                 android:onClick="setChar"
                 android:textSize="35sp" />
 
             <Button
                 android:id="@+id/cell4"
-                android:layout_height="90dp"
+                android:layout_height="@dimen/_90sdp"
                 android:backgroundTint="@color/purple_200"
                 android:onClick="setChar"
                 android:textSize="35sp" />
 
             <Button
                 android:id="@+id/cell5"
-                android:layout_height="90dp"
-                android:layout_marginLeft="11dp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_marginLeft="@dimen/_11sdp"
                 android:backgroundTint="@color/purple_200"
                 android:onClick="setChar"
                 android:textSize="35sp" />
 
             <Button
                 android:id="@+id/cell6"
-                android:layout_height="90dp"
-                android:layout_marginLeft="11dp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_marginLeft="@dimen/_11sdp"
                 android:backgroundTint="@color/purple_200"
                 android:onClick="setChar"
                 android:textSize="35sp" />
 
             <Button
                 android:id="@+id/cell7"
-                android:layout_height="90dp"
+                android:layout_height="@dimen/_90sdp"
                 android:backgroundTint="@color/purple_200"
                 android:onClick="setChar"
                 android:textSize="35sp" />
 
             <Button
                 android:id="@+id/cell8"
-                android:layout_height="90dp"
-                android:layout_marginLeft="11dp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_marginLeft="@dimen/_11sdp"
                 android:backgroundTint="@color/purple_200"
                 android:onClick="setChar"
                 android:textSize="35sp" />
 
             <Button
                 android:id="@+id/cell9"
-                android:layout_height="90dp"
-                android:layout_marginLeft="11dp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_marginLeft="@dimen/_11sdp"
                 android:backgroundTint="@color/purple_200"
                 android:onClick="setChar"
                 android:textSize="35sp" />
@@ -259,5 +256,3 @@
         </GridLayout>
 
     </RelativeLayout>
-
-</ScrollView>

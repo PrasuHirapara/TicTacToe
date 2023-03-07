@@ -15,7 +15,7 @@ import android.widget.Toast;
 import com.airbnb.lottie.LottieAnimationView;
 
 public class activity1v1 extends AppCompatActivity {
-    int flag = 0,XC=00,OC=00;
+    private static int flag = 0,XC=00,OC=00;
     Button cell1,cell2,cell3,cell4,cell5,cell6,cell7,cell8,cell9;
     TextView XCount,OCount,score,sX,sO;
 
@@ -46,7 +46,6 @@ public class activity1v1 extends AppCompatActivity {
         cell7.setAnimation(move_d4);
         cell8.setAnimation(move_up_y);
         cell9.setAnimation(move_d2);
-        score.setAnimation(inVi);
         sO.setAnimation(inVi);
         sX.setAnimation(inVi);
         XCount.setAnimation(inVi);
@@ -90,7 +89,7 @@ public class activity1v1 extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"Player X Won!!!", Toast.LENGTH_LONG).show();
 
             anim = findViewById(R.id.laView5);
-            anim.playAnimation();
+
             Animation Anim = AnimationUtils.loadAnimation(activity1v1.this,R.anim.rotate);
             cell1.setAnimation(Anim);
             cell2.setAnimation(Anim);
