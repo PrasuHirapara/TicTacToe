@@ -3,6 +3,8 @@ package com.example.tictactoe;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -17,12 +19,18 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_ALT_FOCUSABLE_IM,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getSupportActionBar().hide();
+
         setContentView(R.layout.activity_main);
 
-       anim = findViewById(R.id.laView);
-       anim.playAnimation();
 
-       Animation alpha = AnimationUtils.loadAnimation(MainActivity.this,R.anim.alpha);
+        anim = findViewById(R.id.laView);
+        anim.playAnimation();
+
+        Animation alpha = AnimationUtils.loadAnimation(MainActivity.this,R.anim.alpha);
 
         Button button1 = findViewById(R.id.button1v1);
         Button button2 = findViewById(R.id.button1vComp);
@@ -59,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openactivityOnline() {
-        Intent intent = new Intent(this, activity_online.class);
+        Intent intent = new Intent(this, activity_Online.class);
         startActivity(intent);
     }
 }

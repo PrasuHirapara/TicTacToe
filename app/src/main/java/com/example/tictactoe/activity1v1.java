@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -15,14 +17,20 @@ import android.widget.Toast;
 import com.airbnb.lottie.LottieAnimationView;
 
 public class activity1v1 extends AppCompatActivity {
-    private static int flag = 0,XC=00,OC=00;
-    Button cell1,cell2,cell3,cell4,cell5,cell6,cell7,cell8,cell9;
-    TextView XCount,OCount,score,sX,sO;
+    private static int flag = 0;
+    private int XC=0,OC=0,total_game=0;
+    private Button cell1,cell2,cell3,cell4,cell5,cell6,cell7,cell8,cell9;
+    private TextView XCount,OCount,score,sX,sO,total,total_1v1_text;
 
     LottieAnimationView anim;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_ALT_FOCUSABLE_IM,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getSupportActionBar().hide();
+
         setContentView(R.layout.activity_activity1v1);
 
         iniBut();
@@ -50,13 +58,17 @@ public class activity1v1 extends AppCompatActivity {
         sX.setAnimation(inVi);
         XCount.setAnimation(inVi);
         OCount.setAnimation(inVi);
+        total.setAnimation(inVi);
+        total_1v1_text.setAnimation(inVi);
     }
     private void iniBut(){
+        total_1v1_text = findViewById(R.id.total_1v1);
         score = findViewById(R.id.score);
         sO = findViewById(R.id.sO);
         sX = findViewById(R.id.sX);
         XCount = findViewById(R.id.xCount);
         OCount = findViewById(R.id.oCount);
+        total = findViewById(R.id.total);
         cell1 = findViewById(R.id.cell1);
         cell2 = findViewById(R.id.cell2);
         cell3 = findViewById(R.id.cell3);
@@ -84,11 +96,15 @@ public class activity1v1 extends AppCompatActivity {
         }
         if((cell1.getText().toString().equals("X"))&&(cell2.getText().toString().equals("X"))&&(cell3.getText().toString().equals("X"))){
             XC++;
-           XCount.setText(XC+" ");
+            XCount.setText(XC+" ");
+
+            total_game++;
+            total.setText(total_game+"");
 
             Toast.makeText(getApplicationContext(),"Player X Won!!!", Toast.LENGTH_LONG).show();
 
             anim = findViewById(R.id.laView5);
+            anim.playAnimation();
 
             Animation Anim = AnimationUtils.loadAnimation(activity1v1.this,R.anim.rotate);
             cell1.setAnimation(Anim);
@@ -100,6 +116,9 @@ public class activity1v1 extends AppCompatActivity {
         if((cell4.getText().toString().equals("X"))&&(cell5.getText().toString().equals("X"))&&(cell6.getText().toString().equals("X"))){
             XC++;
             XCount.setText(XC+" ");
+
+            total_game++;
+            total.setText(total_game+"");
 
             Toast.makeText(getApplicationContext(),"Player X Won!!!", Toast.LENGTH_LONG).show();
 
@@ -116,6 +135,10 @@ public class activity1v1 extends AppCompatActivity {
         if((cell1.getText().toString().equals("X"))&&(cell4.getText().toString().equals("X"))&&(cell7.getText().toString().equals("X"))){
             XC++;
             XCount.setText(XC+" ");
+
+            total_game++;
+            total.setText(total_game+"");
+
             Toast.makeText(getApplicationContext(),"Player X Won!!!", Toast.LENGTH_LONG).show();
 
             anim = findViewById(R.id.laView5);
@@ -131,6 +154,10 @@ public class activity1v1 extends AppCompatActivity {
         if((cell7.getText().toString().equals("X"))&&(cell8.getText().toString().equals("X"))&&(cell9.getText().toString().equals("X"))){
             XC++;
             XCount.setText(XC+" ");
+
+            total_game++;
+            total.setText(total_game+"");
+
             Toast.makeText(getApplicationContext(),"Player X Won!!!", Toast.LENGTH_LONG).show();
 
             anim = findViewById(R.id.laView5);
@@ -146,6 +173,10 @@ public class activity1v1 extends AppCompatActivity {
         if((cell2.getText().toString().equals("X"))&&(cell5.getText().toString().equals("X"))&&(cell8.getText().toString().equals("X"))){
             XC++;
             XCount.setText(XC+" ");
+
+            total_game++;
+            total.setText(total_game+"");
+            
             Toast.makeText(getApplicationContext(),"Player X Won!!!", Toast.LENGTH_LONG).show();
 
             anim = findViewById(R.id.laView5);
@@ -161,6 +192,10 @@ public class activity1v1 extends AppCompatActivity {
         if((cell3.getText().toString().equals("X"))&&(cell6.getText().toString().equals("X"))&&(cell9.getText().toString().equals("X"))){
             XC++;
             XCount.setText(XC+" ");
+
+            total_game++;
+            total.setText(total_game+"");
+
             Toast.makeText(getApplicationContext(),"Player X Won!!!", Toast.LENGTH_LONG).show();
 
             anim = findViewById(R.id.laView5);
@@ -176,6 +211,10 @@ public class activity1v1 extends AppCompatActivity {
         if((cell1.getText().toString().equals("X"))&&(cell5.getText().toString().equals("X"))&&(cell9.getText().toString().equals("X"))){
             XC++;
             XCount.setText(XC+" ");
+
+            total_game++;
+            total.setText(total_game+"");
+
             Toast.makeText(getApplicationContext(),"Player X Won!!!", Toast.LENGTH_LONG).show();
 
             anim = findViewById(R.id.laView5);
@@ -191,6 +230,10 @@ public class activity1v1 extends AppCompatActivity {
         if((cell3.getText().toString().equals("X"))&&(cell5.getText().toString().equals("X"))&&(cell7.getText().toString().equals("X"))){
             XC++;
             XCount.setText(XC+" ");
+
+            total_game++;
+            total.setText(total_game+"");
+
             Toast.makeText(getApplicationContext(),"Player X Won!!!", Toast.LENGTH_LONG).show();
 
             anim = findViewById(R.id.laView5);
@@ -208,6 +251,10 @@ public class activity1v1 extends AppCompatActivity {
         if((cell1.getText().toString().equals("O"))&&(cell2.getText().toString().equals("O"))&&(cell3.getText().toString().equals("O"))){
             OC++;
             OCount.setText(OC+" ");
+
+            total_game++;
+            total.setText(total_game+"");
+
             Toast.makeText(getApplicationContext(),"Player O Won!!!", Toast.LENGTH_LONG).show();
 
             anim = findViewById(R.id.laView5);
@@ -223,6 +270,10 @@ public class activity1v1 extends AppCompatActivity {
         if((cell4.getText().toString().equals("O"))&&(cell5.getText().toString().equals("O"))&&(cell6.getText().toString().equals("O"))){
             OC++;
             OCount.setText(OC+" ");
+
+            total_game++;
+            total.setText(total_game+"");
+
             Toast.makeText(getApplicationContext(),"Player O Won!!!", Toast.LENGTH_LONG).show();
 
             anim = findViewById(R.id.laView5);
@@ -238,6 +289,10 @@ public class activity1v1 extends AppCompatActivity {
         if((cell7.getText().toString().equals("O"))&&(cell8.getText().toString().equals("O"))&&(cell9.getText().toString().equals("O"))){
             OC++;
             OCount.setText(OC+" ");
+
+            total_game++;
+            total.setText(total_game+"");
+
             Toast.makeText(getApplicationContext(),"Player O Won!!!", Toast.LENGTH_LONG).show();
 
             anim = findViewById(R.id.laView5);
@@ -253,6 +308,10 @@ public class activity1v1 extends AppCompatActivity {
         if((cell1.getText().toString().equals("O"))&&(cell4.getText().toString().equals("O"))&&(cell7.getText().toString().equals("O"))){
             OC++;
             OCount.setText(OC+" ");
+
+            total_game++;
+            total.setText(total_game+"");
+
             Toast.makeText(getApplicationContext(),"Player O Won!!!", Toast.LENGTH_LONG).show();
 
             anim = findViewById(R.id.laView5);
@@ -268,6 +327,10 @@ public class activity1v1 extends AppCompatActivity {
         if((cell2.getText().toString().equals("O"))&&(cell5.getText().toString().equals("O"))&&(cell8.getText().toString().equals("O"))){
             OC++;
             OCount.setText(OC+" ");
+
+            total_game++;
+            total.setText(total_game+"");
+
             Toast.makeText(getApplicationContext(),"Player O Won!!!", Toast.LENGTH_LONG).show();
 
             anim = findViewById(R.id.laView5);
@@ -283,6 +346,10 @@ public class activity1v1 extends AppCompatActivity {
         if((cell3.getText().toString().equals("O"))&&(cell6.getText().toString().equals("O"))&&(cell9.getText().toString().equals("O"))){
             OC++;
             OCount.setText(OC+" ");
+
+            total_game++;
+            total.setText(total_game+"");
+
             Toast.makeText(getApplicationContext(),"Player O Won!!!", Toast.LENGTH_LONG).show();
 
             anim = findViewById(R.id.laView5);
@@ -298,6 +365,10 @@ public class activity1v1 extends AppCompatActivity {
         if((cell1.getText().toString().equals("O"))&&(cell5.getText().toString().equals("O"))&&(cell9.getText().toString().equals("O"))){
             OC++;
             OCount.setText(OC+" ");
+
+            total_game++;
+            total.setText(total_game+"");
+
             Toast.makeText(getApplicationContext(),"Player O Won!!!", Toast.LENGTH_LONG).show();
 
             anim = findViewById(R.id.laView5);
@@ -313,6 +384,10 @@ public class activity1v1 extends AppCompatActivity {
         if((cell3.getText().toString().equals("O"))&&(cell5.getText().toString().equals("O"))&&(cell7.getText().toString().equals("O"))){
             OC++;
             OCount.setText(OC+" ");
+
+            total_game++;
+            total.setText(total_game+"");
+
             Toast.makeText(getApplicationContext(),"Player O Won!!!", Toast.LENGTH_LONG).show();
 
             anim = findViewById(R.id.laView5);
@@ -334,6 +409,10 @@ public class activity1v1 extends AppCompatActivity {
                                 if(((cell7.getText().toString().equals("X"))||(cell7.getText().toString().equals("O")))){
                                     if(((cell8.getText().toString().equals("X"))||(cell8.getText().toString().equals("O")))){
                                         if(((cell9.getText().toString().equals("X"))||(cell9.getText().toString().equals("O")))){
+
+                                            total_game++;
+                                            total.setText(total_game+"");
+
                                             Toast.makeText(getApplicationContext(),"Game Draw!!!", Toast.LENGTH_LONG).show();
 
                                             Animation Anim = AnimationUtils.loadAnimation(activity1v1.this,R.anim.rotate);
